@@ -86,7 +86,8 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
       "taxes_amount": 5,
       "project": 20196,
       "member": 29550,
-      "invoice": null
+      "invoice": null,
+      "currency": 141
     }
   ]
 }
@@ -166,7 +167,8 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
       "taxes_amount": 0,
       "project": null,
       "member": 29550,
-      "invoice": null
+      "invoice": null,
+      "currency": 141
     }
   ]
 }
