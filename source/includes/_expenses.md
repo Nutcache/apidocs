@@ -11,7 +11,6 @@ Using the API allows you to do the following with with expense data.
 | amount_due          | decimal  | The outstanding amount.                                                                                 |
 | amount_paid         | decimal  | The amount already paid.                                                                                |
 | billable            | boolean  | Expense is billable.                                                                                    |
-| currency            | number   | Unique identifier for a currency.                                                                        |
 | description         | string   | Description.                                                                                            |
 | due_date            | date     | The expense due date.                                                                                   |
 | expense_date        | date     | The expense date.                                                                                       |
@@ -65,11 +64,6 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
           "type": "GET"
         },
         {
-           "href":"currencies/141",
-           "rel":"currencies",
-           "type":"GET"
-        },
-        {
           "href": "expenses/234359",
           "rel": "self",
           "type": "GET"
@@ -86,8 +80,7 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
       "taxes_amount": 5,
       "project": 20196,
       "member": 29550,
-      "invoice": null,
-      "currency": 141
+      "invoice": null
     }
   ]
 }
@@ -167,8 +160,7 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
       "taxes_amount": 0,
       "project": null,
       "member": 29550,
-      "invoice": null,
-      "currency": 141
+      "invoice": null
     }
   ]
 }
