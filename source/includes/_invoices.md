@@ -8,7 +8,6 @@ Using the API allows you to do the following with invoice data.
 | Attribute                 | Type     | Description                                                                                                                                                               |
 |---------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | balance                   | decimal  | The customer due amount.                                                                                                                                                  |
-| currency                  | number   | Unique identifier for a currency.                                                                                                                                          |
 | customer                  | number   | Unique identifier for a customer.                                                                                                                                         |
 | customer_address          | string   | The customer address linked to the invoice.                                                                                                                               |
 | customer_city             | string   | The customer city linked to the invoice.                                                                                                                                  |
@@ -64,7 +63,6 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
 			"balance":1225.7900,
 			"paid_to_date":100.0000,
 			"organization":1686,
-      "currency":141,
 			"customer":143222,
 			"customer_address":null,
 			"customer_city":null,
@@ -104,12 +102,7 @@ curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycn
 				"href":"invoices/9287",
 				"rel":"self",
 				"type":"GET"
-				},
-        {
-           "href":"currencies/141",
-           "rel":"currencies",
-           "type":"GET"
-        }
+				}
 			]
 		}
 	]
