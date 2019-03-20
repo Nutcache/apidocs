@@ -928,6 +928,11 @@ If you go over this limit, Nutcache will start returning a HTTP 429 Too Many Req
 <td>Unique identifier for a country.</td>
 </tr>
 <tr>
+<td>currency</td>
+<td>number</td>
+<td>Unique identifier for a currency.</td>
+</tr>
+<tr>
 <td>email</td>
 <td>string</td>
 <td>Email address.</td>
@@ -951,11 +956,6 @@ If you go over this limit, Nutcache will start returning a HTTP 429 Too Many Req
 <td>name</td>
 <td>string</td>
 <td>Name of the customer.</td>
-</tr>
-<tr>
-<td>notes</td>
-<td>string</td>
-<td>Notes.</td>
 </tr>
 <tr>
 <td>phone</td>
@@ -1045,8 +1045,8 @@ If you go over this limit, Nutcache will start returning a HTTP 429 Too Many Req
       </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="s2">"legal_notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"communication_culture_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en-US"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a note."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"tax"</span><span class="p">:</span><span class="w"> </span><span class="mi">11591</span><span class="w">
+      </span><span class="s2">"tax"</span><span class="p">:</span><span class="w"> </span><span class="mi">11591</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="mi">147</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -1125,8 +1125,8 @@ If you go over this limit, Nutcache will start returning a HTTP 429 Too Many Req
       </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"legal_notice"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"communication_culture_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"tax"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+      </span><span class="s2">"tax"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currency"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
@@ -1161,6 +1161,10 @@ If you go over this limit, Nutcache will start returning a HTTP 429 Too Many Req
 <tr>
 <td>countries</td>
 <td>The country associated with this customer.</td>
+</tr>
+<tr>
+<td>currencies</td>
+<td>The currency associated with this customer.</td>
 </tr>
 <tr>
 <td>states</td>
