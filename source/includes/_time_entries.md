@@ -38,7 +38,7 @@ Using the API allows you to do the following with time entry data.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}' 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/time_entries/1
