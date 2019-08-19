@@ -14,7 +14,7 @@ To use the Nutcache API, an owner must first generate a public key. This action 
 ```shell
 curl -H 'Content-Type: application/x-www-form-urlencoded'
 	 -d "grant_type=password&username={YOUR_USERNAME}&password={YOUR_PASSWORD}&api_key={YOUR_API_KEY}"
-     -X POST https://apps.nutcache.com/webapi/token
+		-X POST https://apps.nutcache.com/webapi/token
 ```
 
 Before you start using the API you must generate a Token
