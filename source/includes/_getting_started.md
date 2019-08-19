@@ -19,7 +19,7 @@ Authorization: nut-basic [Base64(_public-key_:_username_:_password_)]
 >Example
 
 ```shell
-curl -H "Authorization: YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM="
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
 	 -H "api-version: 3" 
 	 -H "OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E"
 	 -X GET https://apps.nutcache.com/webapi/customers
@@ -53,7 +53,7 @@ A few valid date fields - 2016-02-15T21:16:25Z , 2012-12-24T12:56:15+05:30, 2010
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
 	 -H 'api-version: 3' 
 	 -H 'CompanyGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects?include=organizations
@@ -70,7 +70,7 @@ You can request for additional entities using the "include" keyword up to one le
 >Example
 
 ```shell
-curl -H "Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk" 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
 	 -H "api-version: 3" 
 	 -H "OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E" 
 	 -X GET "https://apps.nutcache.com/webapi/customers?limit=10&page=2

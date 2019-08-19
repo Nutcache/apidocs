@@ -42,7 +42,7 @@ Using the API allows you to do the following with organization data.
 
 ```shell
 
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/organizations/6745
 
@@ -121,7 +121,7 @@ This API allows you to view the details of an organization.
 
 ```shell
 
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/organizations
 
@@ -208,7 +208,7 @@ Using this API, you can fetch a list of organizations.
 
 ```shell
 
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/organizations/6745?includes=countries,states,currencies
 

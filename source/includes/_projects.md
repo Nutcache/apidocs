@@ -44,7 +44,7 @@ Using the API allows you to do the following with project data.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects/6640
@@ -124,7 +124,7 @@ This API allows you to view the details of a project.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk'
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3'
      -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E'
      -X GET https://apps.nutcache.com/webapi/projects
@@ -207,7 +207,7 @@ Using this API, you can fetch a list of projects.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk'
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3'
      -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E'
      -X GET https://apps.nutcache.com/webapi/projects/6640/project_members
@@ -282,7 +282,7 @@ This endpoint retrieves the project members for a project.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects/6640/project_services
@@ -357,7 +357,7 @@ This endpoint retrieves the project services for a project.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects/6640?includes=customers
@@ -377,7 +377,7 @@ The following entity types can be included in this payload type:
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects/6640/project_members?includes=members
@@ -395,7 +395,7 @@ The following entity types can be included in this payload type:
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects/6640/project_services?includes=items

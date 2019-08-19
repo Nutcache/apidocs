@@ -106,7 +106,7 @@ This API allows you to view the details of a time entry.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/time_entries
@@ -177,7 +177,7 @@ Using this API, you can fetch a list of time entries.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 
 	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/time_entries/1?includes=members,projects,project_services
@@ -198,7 +198,7 @@ The following entity types can be included in this payload type:
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3'
      -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E'
      -X POST -d {"timeentries": [{"start_time":"2018-09-20T09:00", "end_time":"2018-09-20T21:45","note":"Modified from API 3",project_service":106972,"member":9015,"project":6645,"invoice":""}]} https://apps.nutcache.com/webapi/time_entries
@@ -225,7 +225,7 @@ Time entries created (working_date) inside an approved day/week have the option 
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3'
      -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E'
      -X PUT -d {"timeentries": [{"start_time":"2018-09-20T09:00", "end_time":"2018-09-20T21:45","note":"Modified from API 3",project_service":106972,"member":9015,"project":6645,"invoice":""}]} https://apps.nutcache.com/webapi/time_entries/1
@@ -260,7 +260,7 @@ Time entries updated inside an approved day/week have the option to notify admin
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3'
      -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E'
      -X DELETE https://apps.nutcache.com/webapi/time_entries/1

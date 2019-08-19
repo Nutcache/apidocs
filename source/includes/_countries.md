@@ -30,7 +30,7 @@ Using the API allows you to do the following with a country data.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM=' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/countries/231
 ```
@@ -87,7 +87,7 @@ This API allows you to view the details of a country.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM=' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/countries?limit=2&page=20
 ```
@@ -178,7 +178,7 @@ Using this API, you can fetch a list of countries.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6ckpqR2ZGY2Z3Z1Eycnh2aGl0ZDphcGlkb2NzQGFwaWRvY3MuY29tOnBhc3N3b3Jk' 
+curl -H 'Authorization: bearer {YOUR_TOKEN} 
      -H 'api-version: 3' 	 
 	 -X GET https://apps.nutcache.com/webapi/countries/231/states
 ```
@@ -267,7 +267,7 @@ This endpoint retrieves the states/provinces of a country.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM=' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/countries/231?includes=currencies
 ```

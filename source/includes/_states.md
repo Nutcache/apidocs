@@ -26,7 +26,7 @@ Using the API allows you to do the following with a state data.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM=' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/states/12
 ```
@@ -80,7 +80,7 @@ This API allows you to view the details of a state.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM=' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/states?limit=2&page=26
 ```
@@ -161,7 +161,7 @@ Using this API, you can fetch a list of states.
 >Example
 
 ```shell
-curl -H 'Authorization: nut-basic YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM=' 
+curl -H 'Authorization: bearer {YOUR_TOKEN}  
      -H 'api-version: 3' 
 	 -X GET https://apps.nutcache.com/webapi/states/12?includes=countries
 ```
