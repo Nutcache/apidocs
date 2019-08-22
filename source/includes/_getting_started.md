@@ -8,7 +8,7 @@ To use the Nutcache API, an owner must first generate a public key. This action 
 
 ![Manage API Keys](/images/manageapikeys.png)
 
-## Authentication
+## Authentication OAuth
 
 >Example
 
@@ -37,9 +37,29 @@ Before you start using the API you must generate a Token by using this endpoint.
   The token is valide 15 days
 </aside> 
 
-The token must be provided along with your request within the Authorization header.
+The token must be provided along with every requests within the Authorization header.
 
 Authorization: bearer {YOUR_TOKEN}
+
+
+## Authentication Basic-Authentication (until 2019-12-31)
+
+>Example
+
+```shell
+curl -H "Authorization: YVl6T1JtbkdpMHhwaXhCdTQ5b3l6bUpqR29GY2Z3Z1Eycnh2aGl0dDpudXRjYWNoZTFAZ21haWwuY29tOkR5bmFjb20xMjM="
+	 -H "api-version: 3" 
+	 -H "OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E"
+	 -X GET https://apps.nutcache.com/webapi/customers
+```
+<aside class="notice">
+  This authentication methode will not be supported after 2019-12-31
+</aside> 
+Authentication info must be provided along with your request within the Authorization header. The authentication is made of the public key, a username and password, all separated by a colon. The authentication info must be encoded in Base 64.
+
+Authorization: nut-basic [Base64(_public-key_:_username_:_password_)]
+
+
 
 ## Organization context
 
@@ -82,7 +102,7 @@ A few valid date fields - 2016-02-15T21:16:25Z , 2012-12-24T12:56:15+05:30, 2010
 ```shell
 curl -H 'Authorization: bearer {YOUR_TOKEN} 
 	 -H 'api-version: 3' 
-	 -H 'CompanyGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
+	 -H 'OrganizationGuid: 846E176E-7C4B-4BFD-A894-C98F2988927E' 
 	 -X GET https://apps.nutcache.com/webapi/projects?include=organizations
 ```
 
